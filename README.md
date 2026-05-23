@@ -96,16 +96,23 @@ All screenshots, configuration examples, and evidence are sanitized before being
 
 ## Evidence
 
-Evidence will be added in sanitized form only.
+Evidence is added in sanitized form only.
 
-Planned evidence includes:
+| Evidence | Purpose |
+|---|---|
+| [Service Status](evidence/service-status-sanitized.md) | Shows Pi-hole DNS service status |
+| [DNS Resolution Test](evidence/dns-resolution-test-sanitized.md) | Shows allowed domain resolution works |
+| [Blocked Domain Test](evidence/blocked-domain-test-sanitized.md) | Shows DNS filtering is active |
+| [Backup Export](evidence/backup-export-sanitized.md) | Shows backup process exists |
 
-- Pi-hole dashboard screenshot
-- DNS resolution test
-- Blocked domain test
-- Pi-hole service status
-- Backup export evidence
-- Query visibility screenshot with sensitive data removed
+Evidence rules:
+
+- No raw DNS query logs
+- No real client hostnames
+- No MAC addresses
+- No sensitive domains
+- No passwords or tokens
+- No unsanitized screenshots
 
 ## Future Improvements
 
