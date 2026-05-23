@@ -40,3 +40,85 @@ Blocked Domains
      |
      v
 Pi-hole Blocklist / Sinkhole
+```
+
+## Technology Stack
+
+| Component | Purpose |
+|---|---|
+| Raspberry Pi | Lightweight DNS security host |
+| Pi-hole | DNS filtering and query visibility |
+| Linux | Operating system layer |
+| Router / DHCP | Client DNS assignment |
+| Blocklists | Domain filtering control |
+| Runbooks | Operational recovery procedures |
+| GitHub | Documentation and portfolio evidence |
+
+## Security Controls
+
+This project focuses on practical DNS-layer security controls:
+
+- Centralized DNS resolution through Pi-hole
+- Domain blocking using curated blocklists
+- Allowlist process for false-positive handling
+- Local-only administrative access
+- Sanitized evidence and screenshots
+- Backup and restore procedure
+- Operational documentation for DNS failure scenarios
+
+## Operational Scope
+
+This repository does not publish raw DNS query logs, private client information, passwords, tokens, MAC addresses, or sensitive internal network details.
+
+All screenshots, configuration examples, and evidence are sanitized before being added to the repository.
+
+## Documentation
+
+| Document | Description |
+|---|---|
+| [Architecture](docs/architecture.md) | High-level DNS security architecture |
+| [DNS Security Design](docs/dns-security-design.md) | DNS filtering and security role |
+| [Network Flow](docs/network-flow.md) | DNS query flow and forwarding path |
+| [Security Hardening](docs/security-hardening.md) | Hardening controls for Pi-hole and Raspberry Pi |
+| [Monitoring and Alerting](docs/monitoring-and-alerting.md) | Health checks and availability monitoring |
+| [Backup and Restore](docs/backup-and-restore.md) | Recovery process for Pi-hole configuration |
+| [Risks and Tradeoffs](docs/risk-and-tradeoffs.md) | Known limitations and mitigation plan |
+| [Lessons Learned](docs/lessons-learned.md) | Operational lessons from running DNS filtering |
+
+## Runbooks
+
+| Runbook | Purpose |
+|---|---|
+| [DNS Service Down](runbooks/dns-service-down.md) | Recovery steps when DNS service is unavailable |
+| [Client Cannot Resolve Domain](runbooks/client-cannot-resolve-domain.md) | Troubleshooting client DNS resolution issues |
+| [False Positive Block](runbooks/false-positive-block.md) | Handling legitimate domains blocked by Pi-hole |
+| [Restore Pi-hole Backup](runbooks/restore-pihole-backup.md) | Restore procedure after failure or migration |
+
+## Evidence
+
+Evidence will be added in sanitized form only.
+
+Planned evidence includes:
+
+- Pi-hole dashboard screenshot
+- DNS resolution test
+- Blocked domain test
+- Pi-hole service status
+- Backup export evidence
+- Query visibility screenshot with sensitive data removed
+
+## Future Improvements
+
+- Deploy a secondary Pi-hole instance for high availability
+- Add automated backup to NAS or external storage
+- Integrate Pi-hole metrics with Prometheus and Grafana
+- Add alerting for DNS service failure
+- Enforce DNS usage through firewall rules
+- Test client behaviour during Pi-hole outage
+- Document recovery time objective and recovery point objective
+
+## Portfolio Positioning
+
+This project demonstrates practical understanding of DNS security, network visibility, operational reliability, backup and restore planning, and incident response documentation.
+
+The goal is not only to run Pi-hole, but to operate it as a critical DNS security service with production-style documentation.
