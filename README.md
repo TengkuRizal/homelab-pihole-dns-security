@@ -129,3 +129,11 @@ Evidence rules:
 This project demonstrates practical understanding of DNS security, network visibility, operational reliability, backup and restore planning, and incident response documentation.
 
 The goal is not only to run Pi-hole, but to operate it as a critical DNS security service with production-style documentation.
+
+## Monitoring Approach
+
+This project currently documents DNS service monitoring using Pi-hole status checks, DNS resolution tests, blocked-domain validation, and operational runbooks.
+
+Grafana dashboard integration is not implemented directly in this repository. In the broader homelab environment, Pi-hole can be monitored through a centralized observability platform using Prometheus exporters, Grafana dashboards, and alerting rules.
+
+Future improvements may include Pi-hole exporter integration, DNS query visibility, service health dashboards, and alerting for DNS resolution failures or abnormal blocking patterns.
